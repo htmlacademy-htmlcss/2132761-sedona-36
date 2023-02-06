@@ -13,7 +13,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -24,10 +24,10 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">поиск</span></a>
+            <a class="navigation-link-search" href="#"><span class="visually-hidden">поиск</span></a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button"><span class="visually-hidden">Избранное</span></button>
+            <a class="navigation-link-favourites" href="#"><span class="visually-hidden">Избранное 12</span></a>
           </li>
           <li class="navigation-item">
             <button class="navigation-button"><span class="visually-hidden">Хочу сюда</span></button>
@@ -38,8 +38,9 @@
     <main class="main-index">
     <section class="hero">
       <h1 class="visually-hidden">Сайт города Седона</h1>
-
-      <img src="images/welcome.svg" width="458" height="352" alt="welcome to the gorgeous Sedona.">
+,<div class="text-container">
+  <img src="images/welcome.svg" width="458" height="352" alt="welcome to the gorgeous Sedona.">
+  </div>
     </section>
       <section class="advantages">
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,
@@ -49,25 +50,25 @@
 
         <ul class="advantages-list">
 
-          <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages-city-item">
+            <h3 class="advantages-subtitle-white">Настоящий городок</h3>
+            <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="advantages-item">
             <img src="images/foto/advantage-1.jpg" width="800" height="384" alt="Вид с балкона гостиницы.">
           </li>
 
 
-          <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая площадь</h3>
+          <li class="advantages-compact-item">
+            <h3 class="advantages-subtitle">Небольшая площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Красивая дорога</h3>
+          <li class="advantages-road-item">
+            <h3 class="advantages-subtitle">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Мало туристов</h3>
+          <li class="advantages-silence-item">
+            <h3 class="advantages-subtitle">Мало туристов</h3>
             <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
@@ -75,9 +76,9 @@
           <li class="advantages-item">
             <img src="images/foto/advantage-2.jpg" width="800" height="385" alt="Вид на мост Дьявола.">
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="advantages-bridge-item">
+            <h3 class="advantages-subtitle-white">Там есть мост дьявола</h3>
+            <p class="advantages-discription-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
 
         </ul>
@@ -88,21 +89,21 @@
           <p class="proposal-description">Опытный персонал и качественное обслуживание!</p>
 
         <ul class="proposal-services-list">
-          <li class="proposal-services-item">
+          <li class="proposal-services-housing-item">
             <img src="#" alt="Иконка ввиде домика">
-            <h3 class="proposal-services-title">Жильё</h3>
+            <h3 class="proposal-services-subtitle">Жильё</h3>
             <p class="proposal-services-description">Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
-          <li class="proposal-services-item">
+          <li class="proposal-services-meal-item">
             <img src="#" alt="Иконка ввиде бургера">
-            <h3 class="proposal-services-title">Еда</h3>
+            <h3 class="proposal-services-subtitle">Еда</h3>
             <p class="proposal-services-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="proposal-services-item">
+              <li class="proposal-services-present-item">
                 <img src="#" alt="Иконка ввиде подарочной коробки">
-                <h3 class="proposal-services-title">Сувениры</h3>
+                <h3 class="proposal-services-subtitle">Сувениры</h3>
                 <p class="proposal-services-description">Не только китайского,
                   но и настоящего местного производства!</p>
                 </li>
@@ -117,9 +118,8 @@
       </section>
       <section class="subscribe">
         <img src="#" alt="Вид на мост Дьявола">
-      <h2 class="subscribe-title">Подписка на рассылку</h2>
-
-      <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="subscribe-subtitle">Подписка на рассылку</h2>
+         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
         <button class="button subscribe-button" type="submit">Подписаться</button>
@@ -127,21 +127,21 @@
       </section>
     </main>
     <footer>
-
-
-    <ul class="social-list">
+      <ul class="social-list">
       <li class="social-item">
-        <a  class="button" href="https://t.me/htmlacademy">
+        <a  class="button" href="https://t.me/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/></svg>
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="social-item">
-        <a  class="button" href="https://www.youtube.com/user/htmlacademyru">
+
+<a  class="button" href="https://www.youtube.com/user/htmlacademyru"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path fill="#83B3D3" d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z"/></svg>
           <span class="visually-hidden">Youtube</span>
         </a>
       </li>
       <li class="social-item">
-        <a  class="button" href=" https://vk.com/htmlacademy">
+
+<a  class="button" href=" https://vk.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/></svg>
           <span class="visually-hidden">VK</span>
         </a>
       </li>
