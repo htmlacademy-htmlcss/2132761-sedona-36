@@ -114,11 +114,18 @@
           margin-right: 70px;
           align-items: center;
           }
-/*
+
           .navigation-user .navigation-link {
-            min-width: 44px;
-            min-height: 64px;
-          }*/
+           width: 20px;
+           height: 20px;
+           display: block;
+           background-size: 100%;
+           background-position: center;
+          }
+
+          .navigation-search-link {
+            background-image: url("../images/header/search.svg");
+          }
 
 
         .navigation-link {
