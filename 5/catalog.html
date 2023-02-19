@@ -9,10 +9,12 @@
   <body>
     <div class="page-container">
     <header class="page-header">
-      <a aria-current="page" href="index.html">
-        <img class="logo" src="images/header/logo.svg" alt="Логотип сайта Седона." width="140" height="70">
-      </a>
       <nav class="navigation">
+        <div class="navigation-logo">
+      <a aria-current="page" href="#">
+        <img class="logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
+      </a>
+    </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -24,20 +26,20 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="navigation-user-container">
+
         <ul class="navigation-list navigation-user">
           <li class="navigation-search-item">
             <a class="navigation-link" href="#"><span class="visually-hidden">поиск</span></a>
-            <img src="#" alt="">
+
+          </li>
+          <li class="navigation-favourites-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное 12</span></a>
-          </li>
-          <li class="navigation-item">
-            <button class="navigation-button">Хочу сюда</button>
+            <a class="navigation-link-button button" href="#">Хочу сюда</a>
           </li>
         </ul>
-      </div>
+
         </nav>
     </header>
 <main class="main-inner main-container">
@@ -46,8 +48,8 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a  class="breadcrumbs-link-home-icon" href="index.html">
-              <img  src="#" alt="Иконка на главную.">
+            <a  class="breadcrumbs-link-home-icon" href="index.html"><span class="visually-hidden">Иконка на главную</span>
+              
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -137,19 +139,13 @@
           <div class="presentation-container">
           <ul class="presentation-button">
          <li class="presentation-button-table">
-          <a class="button button-table" >
-            <span class="visually-hidden">Показать таблицу</span>
-          </a>
-        </li>
+          <button class="button-table" ><span class="visually-hidden">Показать таблицу</span></button>
+         </li>
           <li class="presentation-button-big">
-            <a class="button" href="#">
-            <span class="visually-hidden">Показать большую карточку гостиницы</span>
-          </a>
+            <button class="button-card-big"><span class="visually-hidden">Показать большую карточку гостиницы</span></button>
           </li>
           <li class="presentation-button-list">
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <button class="button-list"><span class="visually-hidden">Показать список</span></button>
           </li>
           </ul>
         </div>
