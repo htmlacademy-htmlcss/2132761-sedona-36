@@ -296,6 +296,7 @@
           position: absolute;
           left: 0;
          bottom: 0;
+         display: flex;
          }
 
          .advantages {
@@ -372,8 +373,17 @@
           margin-bottom: 62px;
           margin-top: 0;
           width: 175px;
+          position: relative;
+        }
 
-
+        .advantages-subtitle::after {
+          content: "";
+         background-color: rgba(0, 0, 0, 0.3);
+          width: 60px;
+          height: 2px;
+          position: absolute;
+          top: 86px;
+          left: 50px;
         }
         .advantages-subtitle-white {
           color: #FFFFFF;
@@ -383,9 +393,19 @@
            margin-bottom: 62px;
            width: 175px;
            margin-top: 0;
+           position: relative;
 
         }
 
+        .advantages-subtitle-white::after {
+          content: "";
+          background-color: rgba(255, 255, 255, 0.3);
+          width: 60px;
+          height: 2px;
+          position: absolute;
+          top: 86px;
+          left: 50px;
+        }
 
         .advantages-description-white {
           color: #FFFFFF;
@@ -557,6 +577,7 @@
           line-height: 36px;
           font-weight: 700;
           font-family: "PT Sans", "Arial", sans-serif;
+          border: none;
         }
 
         .search-button:hover {
@@ -622,9 +643,12 @@
           font-weight: 700;
           font-size: 20px;
           line-height: 36px;
+          width: 232px;
           text-transform: uppercase;
           border-style: none;
           font-family: "PT Sans", "Arial", sans-serif;
+          padding: 0;
+          border-radius: 0 4px 4px 0;
         }
 
         .subscribe-button:hover {
@@ -639,13 +663,21 @@
           background-color: #82B3D3;
         }
 
-
-
-
         .field {
+          font-family: "PT Sans", "Aria", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
           width: 452px;
           height: 52px;
+          padding: 0;
+          border: none;
+          border-radius: 4px 0 0 4px;
         }
+
+
+
+
 
 .footer-container {
   background-color: #FFFFFF;
@@ -691,16 +723,16 @@
   background-image: url("../images/vk.svg");
 }
 
-.social-link:hover {
-  background-color: #68A2CA;
+.social-link:hover svg  {
+  fill: #68A2CA;
 }
 
-.social-link:focus {
-  background-color: #68A2CA;
+.social-link:focus svg {
+  fill: #68A2CA;
 }
 
-.social-link:active {
-  background-color: rgba(104, 162, 202, 0.3);
+.social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .social-tg {
@@ -946,12 +978,16 @@ opacity: 0.6;
   width: 143px;
   display: flex;
   min-height: 48px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
 }
 
 .filter-criteria-price-max {
   width: 143px;
   display: flex;
   min-height: 48px;
+  background: #F2F2F2;
+  border-radius: 0 4px 4px 0;
 }
 
 .filter-criteria-typehousing-list {
@@ -982,6 +1018,8 @@ opacity: 0.6;
   margin-left: 70px;
   font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
+  border: none;
+  padding: 0;
 }
 
 .button-apply:hover {
@@ -1037,21 +1075,33 @@ li.button {
   border: 4px;
 }
 
-.presentation-button {
+.presentation-button-all {
 display: flex;
 flex-wrap: wrap;
 width: 160px;
-justify-content: space-between;
+justify-content: flex-end;
 margin: 0;
 padding: 0;
+
 }
 
-.presentation-button-table {
+.presentation-button {
   width: 48px;
   height: 48px;
   background-position: center;
+  border-radius: 4px;
+
+   padding: 14px 12px;
+   display: block;
+   box-sizing: border-box;
+
+}
+
+.presentation-button-table {
+  margin-right: 8px;
   background-image: url("../images/catalog/table.svg"); border: 2px solid #E5E5E5;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+
 }
 
 .presentation-button-table:hover {
@@ -1070,11 +1120,10 @@ padding: 0;
 }
 
 .presentation-button-big {
-  width: 48px;
-  height: 48px;
-  background-position: center;
+  margin-right: 8px;
   background-image: url("../images/catalog/view.svg"); border: 2px solid #E5E5E5;
   background-repeat: no-repeat;
+
 }
 
 .presentation-button-big:hover {
@@ -1093,11 +1142,10 @@ padding: 0;
 }
 
 .presentation-button-list {
-  width: 48px;
-  height: 48px;
-  background-position: center;
+
   background-image: url("../images/catalog/list.svg"); border: 2px solid #E5E5E5;
   background-repeat: no-repeat;
+
 }
 
 .presentation-button-list:hover {
@@ -1144,11 +1192,16 @@ padding: 0;
   padding-left: 20px;
   margin-right: 70px;
   font-family: "PT Sans", "Arial", sans-serif;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
 }
 
 .select-control:hover {
   border: 2px solid #68A2CA;
-border-radius: 4px;
+
+   outline: 2px solid #68A2CA;
+    border-radius: 4px;
+    border-color: transparent;
 }
 
 .select-control:focus {
@@ -1246,6 +1299,7 @@ grid-column: 2/3;
   font-size: 16px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
 }
 
 .hotel-card-button-in:hover {
@@ -1296,7 +1350,7 @@ grid-column: 2/3;
   font-size: 16px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
-
+  border: none;
 }
 
 .button-brown:hover {
@@ -1433,7 +1487,7 @@ margin-right: 8px;
 padding: 12px 23.4px;
 }
 
-.pagination-link:hover {
+.pagination-link:hover  {
   background: #68A2CA;
 }
 
@@ -1490,7 +1544,7 @@ margin-left: 258px;
 margin-bottom: 104px;
 }
 
-.subscribe-inner-button {
+/*.subscribe-inner-button {
 background-color: #82B3D3;
 color: #FFFFFF;
 font-weight: 700;
@@ -1499,12 +1553,19 @@ line-height: 36px;
 text-transform: uppercase;
 border-style: none;
 font-family: "PT Sans", "Arial", sans-serif;
-}
+border-radius: 0 4px 4px 0;
+}*/
 
 .field-inner {
   width: 452px;
   height: 52px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 0;
 }
 
 .footer-contacts-phone-num:hover {
@@ -1520,13 +1581,13 @@ font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .htmlacademy-link:hover {
-  background-color: #756157;
+  fill: #756157;
 }
 
 .htmlacademy-link:focus {
-  background-color: #756157;
+  fill: #756157;
 }
 
 .htmlacademy-link:active {
-  background-color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
