@@ -702,8 +702,7 @@
             top: 0;
             right: 0;
             width: 52px;
-            height: 52px;
-            background-color: #ffffff;
+            height: 52px;background-color: #ffffff;
             border: none;
             background-image: url("../images/close.svg");
             background-repeat: no-repeat;
@@ -1381,9 +1380,10 @@ grid-column: 2/3;
    align-items: center;
   justify-content: center;
    font-family: "PT Sans", "Arial", sans-serif;
-
-
 }
+
+
+
 .hotel-card-button {
   background-color: #82B3D3;
   width: 140px;
