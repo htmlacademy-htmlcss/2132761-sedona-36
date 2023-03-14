@@ -30,12 +30,12 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-search-item">
               <a class="navigation-search-link navigation-link" href="#">
-                <svg class="navigation-icon" area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg>
               </a>
             </li>
             <li class="navigation-favourites-item">
               <a class="navigation-favourites-link navigation-link" href="#">
-                <svg class="navigation-icon" area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#000" d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
               </a>
             </li>
             <li class="navigation-item navigation-button">
@@ -128,17 +128,22 @@
                 <div class="filter-criteria-price-field">
                   <label class="catalog-filter-label">
                <input class="filter-criteria-price-field filter-criteria-price-min" type="number" value="0">
+               <span class="filter-criteria-price-text-field">от</span>
               </label>
               <label class="catalog-filter-label">
               <input class="filter-criteria-price-field filter-criteria-price-max" type="number" value="9000">
+              <span class="filter-criteria-price-text-field">до</span>
             </label>
             </div>
-
+            </div>
+                <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0.5px; width:226px">
                     <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
                     <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
@@ -157,15 +162,17 @@
       </header>
 
       <section class="catalog-hotels">
+        <h2 class="catalog-hotels-titles visually-hidden">Гостиницы Седоны</h2>
         <div class="catalog-hotels-sort">
           <p class="catalog-hoteles-sort-quantily">Найдено гостиниц: 38</p>
+          <div class="select sorting-type">
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
-            <option value="cheap">Самые популярные</option>
-            <option value="cheap">Самые дорогие</option>
+            <option value="popular">Самые популярные</option>
+            <option value="expensive">Самые дорогие</option>
           </select>
-
-          <ul class="presentation-button-all">
+        </div>
+        <ul class="presentation-button-all">
          <li class="presentation-button-table-current presentation-button">
           <span class="visually-hidden">Показать таблицу</span>
          </li>
@@ -179,7 +186,6 @@
         </div>
 
         <ul class="hotel-list">
-        <!--<div class="hotel-card-container">-->
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
             <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Вид на звездное небо из пещеры.">
@@ -277,7 +283,7 @@
           <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link href="#">2</a>
+          <a class="pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">3</a>
@@ -309,6 +315,7 @@
       <div class="footer-container">
         <div class="footer-content-container">
         <section class="footer-social">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
       <ul class="social-list">
           <li class="social-item">
             <a  class="social-link social-vk" href=" https://vk.com/htmlacademy"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/></svg>
