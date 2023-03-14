@@ -66,27 +66,30 @@
 
         <section class="filter">
           <h2 class="visually-hidden">Фильтр выбора гостиницы</h2>
-          <form class="filter-criteria" action="https://echo.htmlacademyru/" method="get">
+          <form class="filter-criteria" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filter-container">
             <fieldset class="filter-criteria-services">
               <legend class="filter-criteria-title">Инфраструктура:</legend>
               <ul class="filter-criteria-services-list">
                 <li class="filter-criteria-services-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Swiming" checked>
-                Бассейн
+              <label class="control-services">
+                <input class="control-input visually-hidden" type="checkbox" name="Swiming" checked>
+                <span class="control-services-mark"></span>
+               <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="filter-criteria-services-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Parking" checked>
-                Парковка
+              <label class="control-services">
+                <input class="control-input visually-hidden" type="checkbox" name="Parking" checked>
+                <span class="control-services-mark"></span>
+               <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="filter-criteria-services-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">
-                Wi-Fi
+              <label class="control-services" >
+                <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                <span class="control-services-mark"></span>
+               <span class="control-label">Wi-Fi</span>
               </label>
             </li>
             </ul>
@@ -95,21 +98,24 @@
               <legend class="filter-criteria-title">Тип жилья:</legend>
               <ul class="filter-criteria-typehousing-list">
                 <li class="filter-criteria-typehousing-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="criteria-group" checked>
-                Гостиница
+              <label class="control-typehousing">
+                <input class="control-input visually-hidden" type="radio" name="hotel" checked>
+                <span class="control-typehousing-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="filter-criteria-typehousing-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="criteria-group">
-                мотель
+              <label class="control-typehousing">
+                <input class="control-input visually-hidden" type="radio" name="motel">
+                <span class="control-typehousing-mark"></span>
+              <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="filter-criteria-typehousing-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="criteria-group">
-                апартаменты
+              <label class="control-typehousing">
+                <input class="control-input visually-hidden" type="radio" name="appartement">
+                <span class="control-typehousing-mark"></span>
+               <span class="control-label">Апартаменты</span>
               </label>
             </li>
             </ul>
@@ -152,14 +158,14 @@
       <section class="catalog-hotels">
         <div class="catalog-hotels-sort">
           <p class="catalog-hoteles-sort-quantily">Найдено гостиниц: 38</p>
-          <select class="select-control" aria-label="Сортировка" disabled>
+          <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="cheap">Самые популярные</option>
             <option value="cheap">Самые дорогие</option>
           </select>
 
           <ul class="presentation-button-all">
-         <li class="presentation-button-table presentation-button">
+         <li class="presentation-button-table-current presentation-button">
           <span class="visually-hidden">Показать таблицу</span>
          </li>
           <li class="presentation-button-big presentation-button">
