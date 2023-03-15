@@ -129,7 +129,7 @@
         }
 
         .navigation-item {
-         width: 100px;
+         padding: 0 16px;
         }
 
         .navigation-user {
@@ -265,7 +265,7 @@
           background-repeat: no-repeat;
           background-size: 100% 100%;
           box-sizing: border-box;
-          padding: 51px 371px;
+          padding: 51px 371px 77px;
           position: relative;
          }
 
@@ -285,18 +285,15 @@
           width: 1200px;
          }
 
-         /*.advantages-list-contaner {
-          display: grid;
-          grid-template-columns: 400px 400px 400px;
-         }*/
+
 
         .advantages-description-title {
           font-size: 22px;
          line-height: 26px;
          margin-bottom: 0;
-         padding-left: 274.5px;
-         padding-right: 274.5px;
-         padding-bottom: 69px;
+         padding-left: 274px;
+         padding-right: 274px;
+         padding-bottom: 89px;
          grid-column: 1/-1;
         }
 
@@ -326,17 +323,22 @@
 
         .advantage-text {
           width: 400px;
+          min-height: 385px;
           padding: 102px 85px;
           display: flex;
           flex-direction: column;
+          justify-content: center;
           align-items: center;
           box-sizing: border-box;
         }
 
-        .advantages-item {
-
+          .advantages-balcony-item {
           grid-column: 2/4;
          }
+
+         .advantages-devil-item {
+          grid-column: 1/3;
+        }
 
 
         .advantages-title,.proposal-title,.search-title {
@@ -409,13 +411,14 @@
         }
 
         .advantages-bridge-item {
-          grid-row: 3/4;
+          grid-column: 3/4;
         }
 
         .advantages-item img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          display: block;
          }
 
          .proposal-header-container {
@@ -440,7 +443,7 @@
             line-height: 26px;
             margin-bottom: 0;
             margin-top: 0;
-          }
+            }
 
         .proposal-text {
           width: 400px;
@@ -456,7 +459,7 @@
           margin: 0;
           text-align: center;
           box-sizing: border-box;
-
+          line-height: 21px;
         }
 
         .proposal-services-subtitle {
@@ -540,6 +543,7 @@
           width: 592px;
           margin-top: 20px;
           margin-bottom: 54px;
+          text-align: center;
          }
 
         .search-button {
@@ -552,6 +556,7 @@
           font-weight: 700;
           font-family: "PT Sans", "Arial", sans-serif;
           border: none;
+          padding: 8px 15px;
         }
 
         .search-button:hover {
@@ -621,7 +626,7 @@
           text-transform: uppercase;
           border-style: none;
           font-family: "PT Sans", "Arial", sans-serif;
-          padding: 0;
+          padding: 8px 50px;
           border-radius: 0 4px 4px 0;
         }
 
@@ -648,9 +653,9 @@
           line-height: 24px;
           width: 452px;
           height: 52px;
-          padding: 0;
           border: none;
           border-radius: 4px 0 0 4px;
+          padding: 0 20px;
         }
 
         /*modal*/
@@ -659,10 +664,10 @@
             position: fixed;
             top: 0;
             left: 0;
-            display: flex;
+            display: none;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(242, 242, 242, 0.8);
             z-index: 2;
           }
 
@@ -735,6 +740,8 @@
             background-image: url("../images/calendar.svg");
             background-repeat: no-repeat;
             background-position: right 20px center;
+            border: none;
+            border-radius: 4px;
            }
 
 
@@ -781,6 +788,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 0;
+           }
+
+           .field-person:last-child {
+            padding-left: 5px;
+            box-sizing: border-box;
            }
 
            .field-person-info {
@@ -798,6 +811,8 @@
             padding: 14px 10px;
             box-sizing: border-box;
             border: none;
+            align-items: center;
+            z-index: 1;
            }
 
            .field-person-button:hover path {
@@ -805,7 +820,7 @@
           }
 
           .field-person-button:focus  {
-            border: 3px solid #82B3D3;
+            outline: 3px solid #82B3D3;
             border-radius: 4px;
           }
 
@@ -818,6 +833,10 @@
             padding: 0;
             border: none;
             background-color: #F2F2F2;
+            font-family: "PT Sans", "Aria", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
            }
 
            .field-person-quantity::-webkit-input-placeholder {
@@ -902,7 +921,9 @@
             background-color: #83B3D3;
             padding: 0;
             margin: 0;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
            .tooltip-icon {
@@ -1884,6 +1905,7 @@ margin-bottom: 104px;
     width: 1060px;
     gap: 40px;
     align-items: center;
+    justify-content: space-between;
   }
 
   .social-list {
@@ -1968,6 +1990,10 @@ margin-bottom: 104px;
 
 .footer-contacts-phone-num:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link {
+  display: flex;
 }
 
 .htmlacademy-link:hover {
