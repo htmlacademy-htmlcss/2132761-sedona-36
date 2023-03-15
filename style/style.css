@@ -144,14 +144,6 @@
             width: 160px;
           }
 
-         /* .navigation-user .navigation-link {
-           width: 20px;
-           height: 20px;
-           display: block;
-           background-size: 100%;
-           background-position: center;
-          }*/
-
           .navigation-search-link {
             width: 44px;
             height: 64px;
@@ -161,6 +153,7 @@
             width: 44px;
             height: 64px;
             position: relative;
+            margin-right: 20px;
           }
 
            .navigation-icon {
@@ -255,25 +248,10 @@
           line-height: 20px;
           border-radius: 4px;
           align-items: center;
-          justify-content: center;
-          font-family: "PT Sans", "Arial", sans-serif;
-          margin-top: 14px;
-          margin-bottom: 14px;
-        }
-
-       /* .navigation-button{
-          background-color: #756157;
-          min-width: 160px;
-          min-height: 36px;
-          border-radius: 4px;
-          color: #FFFFFF;
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 20px;
-          text-transform: uppercase;
           padding: 8px 34px;
-
-        }*/
+          font-family: "PT Sans", "Arial", sans-serif;
+          box-sizing: border-box;
+        }
 
         .main-container {
           display: flex;
@@ -282,9 +260,7 @@
           background-color: #FFFFFF;
         }
 
-
-
-        .hero {
+          .hero {
           background-image: url("../images/foto/mountains.jpg");
           background-repeat: no-repeat;
           background-size: 100% 100%;
@@ -683,11 +659,11 @@
             position: fixed;
             top: 0;
             left: 0;
-            display: none;
+            display: flex;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.8);
-
+            z-index: 2;
           }
 
           .modal {
@@ -714,7 +690,6 @@
           flex-direction: column;
           justify-content: flex-start;
           padding: 0;
-          gap: 64px;
          }
 
          .modal-title {
@@ -1387,6 +1362,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   border: none;
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .button-apply:hover {
@@ -1414,7 +1390,8 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
   margin-left: 70px;
   font-family: "PT Sans", "Arial", sans-serif;
-  margin-top: 32px;
+  box-sizing: border-box;
+  padding: 8px 57.5px;
 }
 
 .button-reset:hover {
